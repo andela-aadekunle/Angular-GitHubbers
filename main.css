@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  background: url(img/wood.jpg);
+  font-family: sans-serif;
+}
+
+form {
+  margin-top: 70px;
+  margin-left: 300px;
+}
+
+form #textBox {
+  font-size: 20px;
+  border-radius: 7px;
+  line-height: 50px;
+}
+
+h1 {
+  margin: 100px 0 0 300px;
+  font-weight: bold;
+  font-size: 30px;
+  color: white;
+}
+
+#search {
+    width: 120px;
+    background: #5bff55;
+    border-radius: 5px;
+    color: #000;
+    font-size:18px;
+    line-height: 20px;
+    padding: 5px 0;
+    text-shadow: 0 1px #68B25B;
+}
+
+#error {
+  font-size: 3em;
+  font-weight: bold;
+  font-family: sans-serif;
+  padding-top:  1em;
+  padding-left: 2em;
+  margin: center;
+  
+}
+
+ul li {
+  font-family: sans-serif;
+  margin-left: 20px;
+  margin-bottom: 20px;
+}
+
+ul {
+  display: inline-block;
+}
+
+
+
+ul li img {
+  border-radius: 8px;
+
+} 
+
+
+ul li span {
+  color: darkblue;
+}
+
+ul li div {
+  background-image: url(img/plank.png);
+}

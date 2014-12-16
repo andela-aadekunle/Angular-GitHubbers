@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html ng-App="gitService">
+  <head>
+    <title>SearchHubbers</title>
+    <meta charset="utf-8">
+    <link href='http://fonts.googleapis.com/css?family=Varela+Round' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" type="text/css" href="main.css">
+  </head>
+</head>
+
+<body ng-Controller="gitServiceController">
+  
+  <h1>Looking For A GitHub User?</h1>
+  
+  <form>
+    <input name="username" type="text" size="50" placeholder="Enter Username..." id="textBox" ng-model="text" required>
+    <input type="submit" value="Search" id="search" ng-click="fetchData()">
+     
+</form>
+
+ <div ng-show="error" id="error">Result Not Found!!!</div>
+  <ul  ng-repeat="item in results" id="results">
+   
+    <li>
+      <img ng-src="{{item.avatar_url}}" width=200 height=200><br/>
+      <div>  
+        <span> Login: {{item.login }} </span><br/>
+        <span> Score:  {{item.score }} </span><br/> 
+        <span> Id:  {{item.id }} </span><br/>                
+        <span> Type: {{ item.type }} </span><br/>
+        <a href="{{item.html_url}}">Check Profile</a>
+    </div>
+    </li>
+
+  </ul>
+ 
+ </body>
+<script type="text/javascript" src="angular.js"></script>
+<script type="text/javascript" src="serviceApp.js"></script>
+</html>
